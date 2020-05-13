@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "AKS-001"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "AKS-001-dns"
+        },
+        "agentCount": {
+            "value": 2
+        },
+        "agentVMSize": {
+            "value": "Standard_B2s"
+        },
+        "servicePrincipalClientId": {
+            "value": "1b27aed3-c330-450a-b388-c5c490a13469"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "[.1nH@@f0TfOGD3c3V/fSnMLRVHitAOc"
+        },
+        "kubernetesVersion": {
+            "value": "1.15.10"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "aadSessionKey": {
+            "value": "8df84240-01ad-435d-bff7-94a4002ed7b7",
+			"metadata": {
+				"description": "Random Guid is sufficient here"
+          }
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-DEV/providers/Microsoft.Network/virtualNetworks/VNET-PD-BSM-Mobile-DEV/subnets/AKS-Subnet"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "principalId": {
+            "value": "edb6b090-1e7c-4c81-ac88-ea5ba1558f9f"
+        },
+        "workspaceName": {
+            "value": "MobileDevWorkspace-001-af93449c-9cef-4f42-b861-56e62123f083-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourcegroups/rg-dev-mobile-compute/providers/microsoft.operationalinsights/workspaces/mobiledevworkspace-001-af93449c-9cef-4f42-b861-56e62123f083-eus"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+		"tags": {
+            "value": {
+                "App Type": "Kubernetes Cluster",
+                "Department": "PennDOT",
+                "Division": "Mobile",
+                "Environment": "DEV"
+            }
+        }
+    }
+}
