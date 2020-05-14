@@ -13,9 +13,6 @@
                 "172.16.0.0/21"
             ]
         },
-        "ipv6Enabled": {
-            "value": false
-        },
         "subnet0_name": {
             "value": "AzureBastionSubnet"
         },
