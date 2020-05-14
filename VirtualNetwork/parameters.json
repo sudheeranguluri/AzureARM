@@ -29,7 +29,7 @@
             "value": "snet_pd_pd_nprd_mobile_agic_ac1"
         },
         "subnet2_addressRange": {
-            "value": "172.16.3.0/28"
+            "value": "172.16.3.0/24"
         },
         "subnet3_name": {
             "value": "snet_pd_pd_nprd_uat-mobile-aks_ac1"

@@ -48,7 +48,7 @@
             "value": true
         },
         "vnetSubnetID": {
-            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-DEV/providers/Microsoft.Network/virtualNetworks/VNET-PD-BSM-Mobile-DEV/subnets/AKS-Subnet"
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
         },
         "serviceCidr": {
             "value": "10.0.0.0/16"
