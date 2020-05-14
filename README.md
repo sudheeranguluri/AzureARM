@@ -29,3 +29,9 @@ Follow below steps in order to create necessary mobile infrastructure
 1. [Private End Point (AKS - SQL Server)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)
 2. [Private End Point (AKS - Storage Account)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)
 3. [Private End Point (AKS - KeyVault)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)
+
+# Group 6 (Azure CLI Scripts)
+1. [Network Security Group](https://github.com/sudheeranguluri/AzureARM/tree/master/NSG)
+2. [Managed Identity For App Gateway](https://github.com/sudheeranguluri/AzureARM/tree/master/AppGwManagedIdentity)
+3. [Pod Identity for AGIC](https://github.com/sudheeranguluri/AzureARM/tree/master/PodIdentity)
+4. [Attach ACR to AKS](https://github.com/sudheeranguluri/AzureARM/tree/master/AKS-ACR)
