@@ -37,6 +37,18 @@
         "subnet3_addressRange": {
             "value": "172.16.4.0/24"
         },
+        "subnet0_networkPoliciesEnabled": {
+            "value": "Enabled"
+        },
+        "subnet1_networkPoliciesEnabled": {
+            "value": "Enabled"
+        },
+        "subnet2_networkPoliciesEnabled": {
+            "value": "Enabled"
+        },
+        "subnet3_networkPoliciesEnabled": {
+            "value": "Disabled"
+        },
         "ddosProtectionPlanEnabled": {
             "value": false
         },
