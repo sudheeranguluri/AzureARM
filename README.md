@@ -5,6 +5,7 @@ Azure Resource Management templates for Mobile
 Follow below steps in order to create necessary mobile infrastructure 
 
 1.	[Virtual Network](https://github.com/sudheeranguluri/AzureARM/tree/master/VirtualNetwork)
+2.  [LogAnalytics Workspace](https://github.com/sudheeranguluri/AzureARM/tree/master/LogAnalyticsWorkspace)
 
 
 2.	Software dependencies
