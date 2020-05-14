@@ -2,8 +2,11 @@
 Azure Resource Management templates for Mobile
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
+Follow below steps in order to create necessary mobile infrastructure 
+
+1.	[Virtual Network](https://github.com/sudheeranguluri/AzureARM/tree/master/VirtualNetwork)
+
+
 2.	Software dependencies
 3.	Latest releases
 4.	API references
