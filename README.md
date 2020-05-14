@@ -4,9 +4,15 @@ Azure Resource Management templates for Mobile
 # Getting Started
 Follow below steps in order to create necessary mobile infrastructure 
 
+# Group 1
 1.	[Virtual Network](https://github.com/sudheeranguluri/AzureARM/tree/master/VirtualNetwork)
-2.  [LogAnalytics Workspace](https://github.com/sudheeranguluri/AzureARM/tree/master/LogAnalyticsWorkspace)
-3.  [ACR](https://github.com/sudheeranguluri/AzureARM/tree/master/ACR)
+
+# Group 2
+1. [LogAnalytics Workspace](https://github.com/sudheeranguluri/AzureARM/tree/master/LogAnalyticsWorkspace)
+2. [ACR](https://github.com/sudheeranguluri/AzureARM/tree/master/ACR)
+3. [AKS](https://github.com/sudheeranguluri/AzureARM/tree/master/AKS_CNI)
+
+
 
 
 # Build and Test

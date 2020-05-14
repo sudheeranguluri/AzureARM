@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "resourceName": {
-            "value": "AKS-001"
+            "value": "AKS01"
         },
         "nodeResourceGroupName":{
-            "value": "AKS-001-Nodes"
+            "value": "AKS01-Nodes"
         },
         "location": {
             "value": "eastus"
         },
         "dnsPrefix": {
-            "value": "AKS-001-dns"
+            "value": "AKS01-dns"
         },
         "agentCount": {
             "value": 2
@@ -22,9 +22,6 @@
         },
         "servicePrincipalClientId": {
             "value": "1b27aed3-c330-450a-b388-c5c490a13469"
-        },
-        "servicePrincipalClientSecret": {
-            "value": ""
         },
         "kubernetesVersion": {
             "value": "1.15.10"
@@ -66,10 +63,10 @@
             "value": "edb6b090-1e7c-4c81-ac88-ea5ba1558f9f"
         },
         "workspaceName": {
-            "value": "MobileDevWorkspace-001-af93449c-9cef-4f42-b861-56e62123f083-EUS"
+            "value": "mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-EUS"
         },
         "omsWorkspaceId": {
-            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourcegroups/rg-dev-mobile-compute/providers/microsoft.operationalinsights/workspaces/mobiledevworkspace-001-af93449c-9cef-4f42-b861-56e62123f083-eus"
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourcegroups/testcompute/providers/microsoft.operationalinsights/workspaces/mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-eus"
         },
         "workspaceRegion": {
             "value": "eastus"
