@@ -6,7 +6,7 @@
             "value": "eastus"
         },
         "privateEndpointName": {
-            "value": "asd"
+            "value": "pe-aks01-keyvault01"
         },
         "privateLinkResource": {
             "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.KeyVault/vaults/kv-mobile-nprd"
