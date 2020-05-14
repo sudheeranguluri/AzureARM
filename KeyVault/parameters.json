@@ -60,16 +60,16 @@
             ]
         },
         "enabledForDeployment": {
-            "value": false
+            "value": true
         },
         "enabledForTemplateDeployment": {
             "value": true
         },
         "enabledForDiskEncryption": {
-            "value": false
+            "value": true
         },
         "enableRbacAuthorization": {
-            "value": false
+            "value": true
         },
         "enableSoftDelete": {
             "value": true
