@@ -59,9 +59,6 @@
                 }
             ]
         },
-        "tenant": {
-            "value": "418e2841-0128-4dd5-9b6c-47fc5a9a1bde"
-        },
         "enabledForDeployment": {
             "value": false
         },

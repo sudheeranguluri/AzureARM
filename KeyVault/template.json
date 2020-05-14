@@ -14,9 +14,6 @@
         "accessPolicies": {
             "type": "array"
         },
-        "tenant": {
-            "type": "string"
-        },
         "enabledForDeployment": {
             "type": "bool"
         },
@@ -59,7 +56,7 @@
                 "enabledForDiskEncryption": "[parameters('enabledForDiskEncryption')]",
                 "enableRbacAuthorization": "[parameters('enableRbacAuthorization')]",
                 "accessPolicies": "[parameters('accessPolicies')]",
-                "tenantId": "[parameters('tenant')]",
+                "tenantId": "[subscription().tenantId]",
                 "sku": {
                     "name": "[parameters('sku')]",
                     "family": "A"

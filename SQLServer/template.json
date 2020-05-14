@@ -163,18 +163,6 @@
         "privateDnsForPrivateEndpointIpConfigTemplateLink": {
             "type": "string",
             "defaultValue": ""
-        },
-        "allowClientIp": {
-            "type": "bool",
-            "defaultValue": false
-        },
-        "clientIpRuleName": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "clientIpValue": {
-            "type": "string",
-            "defaultValue": ""
         }
     },
     "resources": [
@@ -256,20 +244,6 @@
                     "properties": {
                         "endIpAddress": "0.0.0.0",
                         "startIpAddress": "0.0.0.0"
-                    },
-                    "type": "firewallrules"
-                },
-                {
-                    "condition": "[parameters('allowClientIp')]",
-                    "apiVersion": "2014-04-01-preview",
-                    "dependsOn": [
-                        "[concat('Microsoft.Sql/servers/', parameters('serverName'))]"
-                    ],
-                    "location": "[parameters('location')]",
-                    "name": "[parameters('clientIpRuleName')]",
-                    "properties": {
-                        "endIpAddress": "[parameters('clientIpValue')]",
-                        "startIpAddress": "[parameters('clientIpValue')]"
                     },
                     "type": "firewallrules"
                 },

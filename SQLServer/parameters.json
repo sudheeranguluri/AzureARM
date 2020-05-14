@@ -12,7 +12,7 @@
             "value": "SQL_Latin1_General_CP1_CI_AS"
         },
         "databaseName": {
-            "value": "formsb"
+            "value": "dbforms"
         },
         "tier": {
             "value": "GeneralPurpose"
@@ -30,7 +30,7 @@
             "value": ""
         },
         "serverName": {
-            "value": "testserver1322"
+            "value": "sqlmobile01"
         },
         "licenseType": {
             "value": "LicenseIncluded"
@@ -52,9 +52,6 @@
         },
         "allowClientIp": {
             "value": false
-        },
-        "clientIpValue": {
-            "value": "152.208.12.151"
         },
         "databaseTags": {
             "value": {
