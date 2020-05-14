@@ -6,11 +6,8 @@ Follow below steps in order to create necessary mobile infrastructure
 
 1.	[Virtual Network](https://github.com/sudheeranguluri/AzureARM/tree/master/VirtualNetwork)
 2.  [LogAnalytics Workspace](https://github.com/sudheeranguluri/AzureARM/tree/master/LogAnalyticsWorkspace)
+3.  [ACR](https://github.com/sudheeranguluri/AzureARM/tree/master/ACR)
 
-
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 

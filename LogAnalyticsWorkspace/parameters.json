@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "MobileProdWorkspace-001-af93449c-9cef-4f42-b861-56e62123f083-EUS"
+            "value": "mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-EUS"
         },
         "location": {
             "value": "eastus"
