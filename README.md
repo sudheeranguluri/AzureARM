@@ -17,8 +17,12 @@ Follow below steps in order to create necessary mobile infrastructure
 1. [Application Gateway](https://github.com/sudheeranguluri/AzureARM/tree/master/AppGateway)
 2. [APIM](https://github.com/sudheeranguluri/AzureARM/tree/master/APIM)
 
+# Group 4 (Application)
 
-
+1. [App Service](https://github.com/sudheeranguluri/AzureARM/tree/master/AppService)
+2. [SQL Server](https://github.com/sudheeranguluri/AzureARM/tree/master/SQLServer)
+3. [Storage Account](https://github.com/sudheeranguluri/AzureARM/tree/master/StorageAccount)
+4. [KeyVault](https://github.com/sudheeranguluri/AzureARM/tree/master/KeyVault)
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 

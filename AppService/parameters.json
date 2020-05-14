@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "subscriptionId": {
-            "value": "00e7723f-84ad-456d-91c3-4a5a944f49de"
-        },
         "name": {
             "value": "samwebsa"
         },
@@ -15,10 +12,7 @@
             "value": ""
         },
         "hostingPlanName": {
-            "value": "asp-mobileweb-sandbox"
-        },
-        "serverFarmResourceGroup": {
-            "value": "RG-PD-BSM-Mobile-AKS-DVSP-SB"
+            "value": "asp-mobile-dev"
         },
         "alwaysOn": {
             "value": false

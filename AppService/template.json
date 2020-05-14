@@ -1,10 +1,7 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "subscriptionId": {
-            "type": "string"
-        },
+    "parameters":{
         "name": {
             "type": "string"
         },
@@ -15,9 +12,6 @@
             "type": "string"
         },
         "hostingPlanName": {
-            "type": "string"
-        },
-        "serverFarmResourceGroup": {
             "type": "string"
         },
         "alwaysOn": {
@@ -33,7 +27,8 @@
             "type": "string"
         },
         "dockerRegistryPassword": {
-            "type": "securestring"
+            "type": "securestring",
+            "minLength": 1
         },
         "dockerRegistryStartupCommand": {
             "type": "string"
@@ -75,7 +70,7 @@
                     "appCommandLine": "[parameters('dockerRegistryStartupCommand')]",
                     "alwaysOn": "[parameters('alwaysOn')]"
                 },
-                "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
+                "serverFarmId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "hostingEnvironment": "[parameters('hostingEnvironment')]",
                 "clientAffinityEnabled": false
             }
