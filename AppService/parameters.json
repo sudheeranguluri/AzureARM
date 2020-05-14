@@ -14,26 +14,35 @@
         "alwaysOn": {
             "value": false
         },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "B1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
         "linuxFxVersion": {
-            "value": "DOCKER|acrpdbsmmobileaksdvspsb.azurecr.io/docker-nginx:latest"
+            "value": "DOCKER|nginx"
         },
         "dockerRegistryUrl": {
-            "value": "https://acrpdbsmmobileaksdvspsb.azurecr.io"
+            "value": "https://index.docker.io"
         },
         "dockerRegistryUsername": {
-            "value": "ACRPDBSMMobileAKSDVSPSB"
+            "value": ""
         },
         "dockerRegistryPassword": {
             "value": null
         },
-        "tags": {
-            "value": {
-                "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "App Service"
-            }
+        "dockerRegistryStartupCommand": {
+            "value": ""
         }
     }
 }
