@@ -28,3 +28,4 @@ Follow below steps in order to create necessary mobile infrastructure
 
 1. [Private End Point (AKS - SQL Server)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)
 2. [Private End Point (AKS - Storage Account)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)
+3. [Private End Point (AKS - KeyVault)](https://github.com/sudheeranguluri/AzureARM/tree/master/Private-EndPoint)

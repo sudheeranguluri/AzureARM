@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "privateEndpointName": {
+            "value": "asd"
+        },
+        "privateLinkResource": {
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.KeyVault/vaults/kv-mobile-nprd"
+        },
+        "targetSubResource": {
+            "value": [
+                "vault"
+            ]
+        },
+        "subnet": {
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Private End Point"
+            }
+        }
+    }
+}
