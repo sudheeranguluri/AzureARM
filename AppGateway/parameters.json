@@ -15,10 +15,13 @@
             "value": "Standard_v2"
         },
         "capacity": {
-            "value": 0
+            "value": 2
+        },
+        "vnetId":{
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1"
         },
         "subnetName": {
-            "value": "Gateway-Subnet"
+            "value": "snet_pd_pd_nprd_mobile_agic_ac1"
         },
         "zones": {
             "value": [

@@ -39,12 +39,18 @@
         "autoScaleMaxCapacity": {
             "type": "int"
         },
+        "vnetId":{
+            "type": "string",
+            "metadata": {
+                "desription": "Virtual Network Id"
+            }
+        },
 		"tags": {
             "type": "object"
         }
     },
     "variables": {
-        "vnetId": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-DEV/providers/Microsoft.Network/virtualNetworks/VNET-PD-BSM-Mobile-DEV",
+        "vnetId": "[parameters('vnetId')]",
         "publicIPRef": "[resourceId('Microsoft.Network/publicIPAddresses/', parameters('publicIpAddressName'))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]",
         "applicationGatewayId": "[resourceId('Microsoft.Network/applicationGateways', parameters('applicationGatewayName'))]"
