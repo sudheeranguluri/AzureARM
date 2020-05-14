@@ -9,10 +9,17 @@
             "type": "string"
         },
         "sku": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "Shared", "Free", "Basic", "Basic", "Basic", "Standard", "Standard", "Standard", "Premium", "Premium", "Premium", "PremiumV2", "PremiumV2", "PremiumV2", "Isolated", "Isolated", "Isolated", "Dynamic"
+            ]
         },
         "skucode": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "D1","F1","B1","B2","B3","S1","S2","S3","P1","P2","P3","P1V2","P2V2","P3V2","I1","I2","I3","Y1"
+            ]
+
         },
         "workerSize": {
             "type": "string"
@@ -21,9 +28,6 @@
             "type": "string"
         },
         "numberOfWorkers": {
-            "type": "string"
-        },
-        "hostingEnvironment": {
             "type": "string"
         },
 		"tags": {
@@ -43,8 +47,7 @@
                 "workerSize": "[parameters('workerSize')]",
                 "workerSizeId": "[parameters('workerSizeId')]",
                 "numberOfWorkers": "[parameters('numberOfWorkers')]",
-                "reserved": true,
-                "hostingEnvironment": "[parameters('hostingEnvironment')]"
+                "reserved": true
             },
             "sku": {
                 "Tier": "[parameters('sku')]",

@@ -5,9 +5,6 @@
         "name": {
             "value": "asp-mobile-dev"
         },
-        "hostingEnvironment": {
-            "value": "Linux"
-        },
         "location": {
             "value": "East US"
         },
@@ -15,7 +12,7 @@
             "value": "Basic"
         },
         "skuCode": {
-            "value": "P1v2"
+            "value": "B1"
         },
         "workerSize": {
             "value": "3"
