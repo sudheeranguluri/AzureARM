@@ -1,0 +1,40 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "asp-mobile-dev"
+        },
+        "hostingEnvironment": {
+            "value": "Linux"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "P1v2"
+        },
+        "workerSize": {
+            "value": "3"
+        },
+        "workerSizeId": {
+            "value": "3"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "App Service Plan"
+            }
+        }
+
+    }
+}

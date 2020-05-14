@@ -19,7 +19,8 @@ Follow below steps in order to create necessary mobile infrastructure
 
 # Group 4 (Application)
 
-1. [App Service](https://github.com/sudheeranguluri/AzureARM/tree/master/AppService)
+1. [App Service Plan](https://github.com/sudheeranguluri/AzureARM/tree/master/AppServicePlan)
+2. [App Service](https://github.com/sudheeranguluri/AzureARM/tree/master/AppService)
 2. [SQL Server](https://github.com/sudheeranguluri/AzureARM/tree/master/SQLServer)
 3. [Storage Account](https://github.com/sudheeranguluri/AzureARM/tree/master/StorageAccount)
 4. [KeyVault](https://github.com/sudheeranguluri/AzureARM/tree/master/KeyVault)
