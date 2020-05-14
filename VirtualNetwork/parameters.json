@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualNetworkName": {
+            "value": "vnet_pd_pd_mobile_ac1"
+        },
+        "addressSpaces": {
+            "value": [
+                "172.16.0.0/21"
+            ]
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "subnet0_name": {
+            "value": "AzureBastionSubnet"
+        },
+        "subnet0_addressRange": {
+            "value": "172.16.1.0/27"
+        },
+        "subnet1_name": {
+            "value": "GatewaySubnet"
+        },
+        "subnet1_addressRange": {
+            "value": "172.16.2.0/28"
+        },
+        "subnet2_name": {
+            "value": "snet_pd_pd_nprd_mobile_agic_ac1"
+        },
+        "subnet2_addressRange": {
+            "value": "172.16.3.0/28"
+        },
+        "subnet3_name": {
+            "value": "snet_pd_pd_nprd_uat-mobile-aks_ac1"
+        },
+        "subnet3_addressRange": {
+            "value": "172.16.4.0/28"
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Virtual Network"
+            }
+        }
+    }
+}

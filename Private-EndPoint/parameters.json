@@ -1,0 +1,44 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "privateEndpointName": {
+            "value": "asd"
+        },
+        "privateLinkResource": {
+            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-AKS-DVSP-SB/providers/Microsoft.Sql/servers/formadmsb"
+        },
+        "targetSubResource": {
+            "value": [
+                "sqlServer"
+            ]
+        },
+        "requestMessage": {
+            "value": ""
+        },
+        "subnet": {
+            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-DEV/providers/Microsoft.Network/virtualNetworks/VNET-PD-BSM-Mobile-DEV/subnets/AKS-Subnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-DEV/providers/Microsoft.Network/virtualNetworks/VNET-PD-BSM-Mobile-DEV"
+        },
+        "subnetDeploymentName": {
+            "value": "UpdateSubnetDeployment-fa9f8e65-cfd5-4e03-91a4-969ccba0e026"
+        },
+        "virtualNetworkResourceGroup": {
+            "value": "RG-PD-BSM-Mobile-DEV"
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Private End Point"
+            }
+        }
+    }
+}

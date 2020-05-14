@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "00e7723f-84ad-456d-91c3-4a5a944f49de"
+        },
+        "name": {
+            "value": "samwebsa"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingEnvironment": {
+            "value": ""
+        },
+        "hostingPlanName": {
+            "value": "asp-mobileweb-sandbox"
+        },
+        "serverFarmResourceGroup": {
+            "value": "RG-PD-BSM-Mobile-AKS-DVSP-SB"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "linuxFxVersion": {
+            "value": "DOCKER|acrpdbsmmobileaksdvspsb.azurecr.io/docker-nginx:latest"
+        },
+        "dockerRegistryUrl": {
+            "value": "https://acrpdbsmmobileaksdvspsb.azurecr.io"
+        },
+        "dockerRegistryUsername": {
+            "value": "ACRPDBSMMobileAKSDVSPSB"
+        },
+        "dockerRegistryPassword": {
+            "value": null
+        },
+        "dockerRegistryStartupCommand": {
+            "value": ""
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "App Service"
+            }
+        }
+    }
+}

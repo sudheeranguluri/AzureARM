@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "string"
+        },
+        "virtualNetworkName": {
+            "type": "string"
+        },
+        "addressSpaces": {
+            "type": "array"
+        },
+        "ipv6Enabled": {
+            "type": "bool"
+        },
+        "subnet0_name": {
+            "type": "string"
+        },
+        "subnet0_addressRange": {
+            "type": "string"
+        },
+        "subnet1_name": {
+            "type": "string"
+        },
+        "subnet1_addressRange": {
+            "type": "string"
+        },
+        "subnet2_name": {
+            "type": "string"
+        },
+        "subnet2_addressRange": {
+            "type": "string"
+        },
+        "subnet3_name": {
+            "type": "string"
+        },
+        "subnet3_addressRange": {
+            "type": "string"
+        },
+        "ddosProtectionPlanEnabled": {
+            "type": "bool"
+        },
+		"tags": {
+            "type": "object"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "name": "[parameters('virtualNetworkName')]",
+            "type": "Microsoft.Network/VirtualNetworks",
+            "apiVersion": "2019-09-01",
+            "location": "[parameters('location')]",
+            "dependsOn": [],
+            "tags": "[parameters('tags')]",
+            "properties": {
+                
+                "addressSpace": {
+                    "addressPrefixes": "[parameters('addressSpaces')]"
+                },
+                "ipv6Enabled": "[parameters('ipv6Enabled')]",
+                "subnets": [
+                    {
+                        "name": "[parameters('subnet0_name')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnet0_addressRange')]"
+                        }
+                    },
+                    {
+                        "name": "[parameters('subnet1_name')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnet1_addressRange')]"
+                        }
+                    },
+                    {
+                        "name": "[parameters('subnet2_name')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnet2_addressRange')]"
+                        }
+                    },
+                    {
+                        "name": "[parameters('subnet3_name')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnet3_addressRange')]"
+                        }
+                    }
+                ],
+                "enableDdosProtection": "[parameters('ddosProtectionPlanEnabled')]"
+            }
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "acrName": {
+          "value": "mobile-acr"
+        },
+        "acrAdminUserEnabled": {
+          "value": true
+        },
+        "location": {
+          "value": "eastus"
+        },
+        "acrSku": {
+          "value": "Basic"
+        },
+		"tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Container Registry"
+            }
+        }
+    }
+}

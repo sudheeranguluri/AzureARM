@@ -5,6 +5,9 @@
         "resourceName": {
             "value": "AKS-001"
         },
+        "nodeResourceGroupName":{
+            "value": "AKS-001-Nodes"
+        },
         "location": {
             "value": "eastus"
         },
@@ -21,7 +24,7 @@
             "value": "1b27aed3-c330-450a-b388-c5c490a13469"
         },
         "servicePrincipalClientSecret": {
-            "value": "[.1nH@@f0TfOGD3c3V/fSnMLRVHitAOc"
+            "value": ""
         },
         "kubernetesVersion": {
             "value": "1.15.10"
@@ -73,10 +76,11 @@
         },
 		"tags": {
             "value": {
-                "App Type": "Kubernetes Cluster",
-                "Department": "PennDOT",
+                "Agency": "PDOT",
                 "Division": "Mobile",
-                "Environment": "DEV"
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Kubernetes Cluster"
             }
         }
     }

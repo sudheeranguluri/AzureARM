@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "MobileProdWorkspace-001-af93449c-9cef-4f42-b861-56e62123f083-EUS"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "sku": {
+            "value": "pergb2018"
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Log Analytics Workspace"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "storageAccountName": {
+            "value": "tstdepoysto"
+        },
+        "accountType": {
+            "value": "Premium_LRS"
+        },
+        "kind": {
+            "value": "StorageV2"
+        },
+        "supportsHttpsTrafficOnly": {
+            "value": true
+        },
+        "isBlobSoftDeleteEnabled": {
+            "value": true
+        },
+        "blobSoftDeleteRetentionDays": {
+            "value": 7
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "Storage Account"
+            }
+        }
+    }
+}

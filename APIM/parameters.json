@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "apim-mobile"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "adminEmail": {
+            "value": "XXXX@pa.gov"
+        },
+        "orgName": {
+            "value": "PDOT"
+        },
+        "tier": {
+            "value": "Developer"
+        },
+        "capacity": {
+            "value": 1
+        },
+		"tags": {
+            "value": {
+                "Agency": "PDOT",
+                "Division": "Mobile",
+                "Region": "non-prd",
+                "Environment": "PD",
+                "Application": "API Management"
+            }
+        }
+    }
+}
