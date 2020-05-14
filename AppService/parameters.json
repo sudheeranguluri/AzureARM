@@ -8,9 +8,6 @@
         "location": {
             "value": "East US"
         },
-        "hostingEnvironment": {
-            "value": ""
-        },
         "hostingPlanName": {
             "value": "asp-mobile-dev"
         },
@@ -28,9 +25,6 @@
         },
         "dockerRegistryPassword": {
             "value": null
-        },
-        "dockerRegistryStartupCommand": {
-            "value": ""
         },
         "tags": {
             "value": {

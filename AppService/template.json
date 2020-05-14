@@ -8,9 +8,6 @@
         "location": {
             "type": "string"
         },
-        "hostingEnvironment": {
-            "type": "string"
-        },
         "hostingPlanName": {
             "type": "string"
         },
@@ -29,9 +26,6 @@
         "dockerRegistryPassword": {
             "type": "securestring",
             "minLength": 1
-        },
-        "dockerRegistryStartupCommand": {
-            "type": "string"
         },
 		"tags": {
             "type": "object"
@@ -67,11 +61,9 @@
                         }
                     ],
                     "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                    "appCommandLine": "[parameters('dockerRegistryStartupCommand')]",
                     "alwaysOn": "[parameters('alwaysOn')]"
                 },
                 "serverFarmId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourcegroups/', resourceGroup().name, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
-                "hostingEnvironment": "[parameters('hostingEnvironment')]",
                 "clientAffinityEnabled": false
             }
         }
