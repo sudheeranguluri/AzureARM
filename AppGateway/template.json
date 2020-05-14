@@ -45,6 +45,12 @@
                 "desription": "Virtual Network Id"
             }
         },
+        "domainName": {
+            "type": "string",
+            "metadata": {
+                "description": "domain name of the public ip address. ****.eastus.cloudapp.azure.com"
+            }
+        },
 		"tags": {
             "type": "object"
         }
@@ -217,7 +223,10 @@
             },
             "zones": "[parameters('publicIpZones')]",
             "properties": {
-                "publicIPAllocationMethod": "[parameters('allocationMethod')]"
+                "publicIPAllocationMethod": "[parameters('allocationMethod')]",
+                "dnsSettings":{
+                    "domainNameLabel": "[parameters('domainName')]"
+                }
             }
         }
     ]

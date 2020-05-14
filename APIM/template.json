@@ -15,7 +15,10 @@
             "type": "string"
         },
         "tier": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "Developer", "Standard", "Premium"
+            ]
         },
         "capacity": {
             "type": "int"
