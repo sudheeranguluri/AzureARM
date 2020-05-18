@@ -45,16 +45,16 @@
         "autoScaleMaxCapacity": {
             "type": "int"
         },
-        "vnetResourceGroupName": {
+        "vNetResourceGroupName": {
             "type": "string",
             "metadata": {
                 "desription": "Virtual Network Resource Group Name"
             }
         },
-        "vnetName":{
+        "vNetName":{
             "type": "string",
             "metadata": {
-                "desription": "Virtual Network Id"
+                "desription": "Virtual Network Name"
             }
         },
         "domainName": {

@@ -17,12 +17,6 @@
         "capacity": {
             "value": 2
         },
-        "vnetResourceGroupName": {
-            "value": "ArmTemplatesTest"
-        },
-        "vnetName":{
-            "value": "vnet_pd_pd_mobile_ac1"
-        },
         "subnetName": {
             "value": "snet_pd_pd_nprd_mobile_agic_ac1"
         },
@@ -46,6 +40,12 @@
         },
         "autoScaleMaxCapacity": {
             "value": 10
+        },
+        "vNetResourceGroupName": {
+            "value": "ArmTemplatesTest"
+        },
+        "vNetName":{
+            "value": "vnet_pd_pd_mobile_ac1"
         },
         "domainName": {
             "value": "penndotmobile"
