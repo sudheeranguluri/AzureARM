@@ -5,8 +5,8 @@ Azure Resource Management templates for Mobile
 Follow below steps in order to create necessary mobile infrastructure 
 
 Please note
-  * Groups 1 to 5 requires contributor rights to resource group(s)
-  * Group 6 requires owner permission at subscription level
+  * Groups 1 to 5 requires **Contributor** rights to resource group(s)
+  * Group 6 requires owner **Permission** at subscription level
 
 # Group 1 (Network) - Contributor
 1.	[Virtual Network](https://github.com/sudheeranguluri/AzureARM/tree/master/VirtualNetwork)
