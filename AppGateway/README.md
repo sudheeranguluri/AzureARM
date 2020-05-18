@@ -2,6 +2,6 @@
 
 Parameters needs attention
 
-1. Virtual Network Details (Resource Group Name, Subnet Name)
+1. Virtual Network Details (Resource Group Name, VNet Name, Subnet Name)
 
 [Main](https://github.com/sudheeranguluri/AzureARM)
