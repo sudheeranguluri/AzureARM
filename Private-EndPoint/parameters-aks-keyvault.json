@@ -8,15 +8,15 @@
         "privateEndpointName": {
             "value": "pe-aks01-keyvault01"
         },
-        "privateLinkResource": {
+        "toResourceId": {
             "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.KeyVault/vaults/kv-mobile-nprd"
         },
-        "targetSubResource": {
+        "toSubResource": {
             "value": [
                 "vault"
             ]
         },
-        "subnet": {
+        "fromSubnetId": {
             "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
         },
         "tags": {

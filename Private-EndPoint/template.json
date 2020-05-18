@@ -8,16 +8,25 @@
         "privateEndpointName": {
             "type": "string"
         },
-        "privateLinkResource": {
-            "type": "string"
+
+         "fromSubnetId": {
+            "type": "string",
+            "metadata": {
+                "desription":"Azure ID of the FROM subnet"
+            }
         },
-        "targetSubResource": {
+        
+        "toResourceId": {
+            "type": "string",
+            "metadata": {
+                "desription":"Azure ID of the TO resource"
+            }
+        },
+        "toSubResource": {
             "type": "array"
         },
         
-        "subnet": {
-            "type": "string"
-        },
+       
 		"tags": {
             "type": "object"
         }
@@ -30,14 +39,14 @@
             "apiVersion": "2019-04-01",
             "properties": {
                 "subnet": {
-                    "id": "[parameters('subnet')]"
+                    "id": "[parameters('fromSubnetId')]"
                 },
                 "privateLinkServiceConnections": [
                     {
                         "name": "[parameters('privateEndpointName')]",
                         "properties": {
-                            "privateLinkServiceId": "[parameters('privateLinkResource')]",
-                            "groupIds": "[parameters('targetSubResource')]"
+                            "privateLinkServiceId": "[parameters('toResourceId')]",
+                            "groupIds": "[parameters('toSubResource')]"
                         }
                     }
                 ]
