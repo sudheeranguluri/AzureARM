@@ -35,20 +35,20 @@
         "enablePrivateCluster": {
             "value": false
         },
-        "aadSessionKey": {
-            "value": "8df84240-01ad-435d-bff7-94a4002ed7b7",
-			"metadata": {
-				"description": "Random Guid is sufficient here"
-          }
-        },
         "enableHttpApplicationRouting": {
             "value": false
         },
         "vmssNodePool": {
             "value": true
         },
-        "vnetSubnetID": {
-            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
+        "vnetResourceGroupName": {
+            "value": "ARMTemplatesTest" 
+        },
+        "vnetName": {
+            "value": "vnet_pd_pd_mobile_ac1"
+        },
+        "subnetName": {
+            "value": "snet_pd_pd_nprd_uat-mobile-aks_ac1"
         },
         "serviceCidr": {
             "value": "10.0.0.0/16"
@@ -59,16 +59,13 @@
         "dockerBridgeCidr": {
             "value": "172.17.0.1/16"
         },
-        "principalId": {
-            "value": "edb6b090-1e7c-4c81-ac88-ea5ba1558f9f"
-        },
-        "workspaceName": {
+        "omsWorkspaceName": {
             "value": "mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-EUS"
         },
-        "omsWorkspaceId": {
-            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourcegroups/testcompute/providers/microsoft.operationalinsights/workspaces/mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-eus"
+        "omsWorkspaceResourceGroupName":{
+            "value": "ArmTemplatesTest"
         },
-        "workspaceRegion": {
+        "omsWorkspaceRegion": {
             "value": "eastus"
         },
 		"tags": {

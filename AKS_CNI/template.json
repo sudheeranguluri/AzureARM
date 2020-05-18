@@ -53,6 +53,7 @@
                 "description": "Client ID used by Azure"
             },
             "type": "securestring",
+            "minLength": 1
         },
         "servicePrincipalClientSecret": {
             "metadata": {
@@ -88,32 +89,11 @@
                 "description": "Network plugin used for building Kubernetes network."
             }
         },
-        "maxPods": {
-            "type": "int",
-            "defaultValue": 30,
-            "metadata": {
-                "description": "Maximum number of pods that can run on a node."
-            }
-        },
         "enableRBAC": {
             "type": "bool",
             "defaultValue": true,
             "metadata": {
                 "description": "Boolean flag to turn on and off of RBAC."
-            }
-        },
-        "vmssNodePool": {
-            "type": "bool",
-            "defaultValue": false,
-            "metadata": {
-                "description": "Boolean flag to turn on and off of VM scale sets"
-            }
-        },
-        "windowsProfile": {
-            "type": "bool",
-            "defaultValue": false,
-            "metadata": {
-                "description": "Boolean flag to turn on and off of VM scale sets"
             }
         },
         "enablePrivateCluster": {
@@ -122,10 +102,6 @@
             "metadata": {
                 "description": "Enable private network access to the Kubernetes cluster."
             }
-        },
-        "aadSessionKey": {
-            "type": "securestring",
-            "defaultValue": ""
         },
         "enableHttpApplicationRouting": {
             "type": "bool",
@@ -141,47 +117,42 @@
                 "description": "Boolean flag to turn on and off of omsagent addon."
             }
         },
-        "workspaceRegion": {
+        "omsWorkspaceResourceGroupName":{
+            "type": "string",
+            "metadata": {
+                "description": "Resource group name of log analytics workspace"
+            }
+        },
+        "omsWorkspaceRegion": {
             "type": "string",
             "defaultValue": "East US",
             "metadata": {
                 "description": "Specify the region for your OMS workspace."
             }
         },
-        "workspaceName": {
+        "omsWorkspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Specify the name of the OMS workspace."
+                "description": "OMS Workspace Name"
             }
         },
-        "omsWorkspaceId": {
+        "vnetResourceGroupName": {
             "type": "string",
             "metadata": {
-                "description": "Specify the resource id of the OMS workspace."
+                "description": "Resource group name of virtual network"
+            },
+            "minLength": 1
+        },
+        "vnetName": {
+            "type": "string",
+            "metadata": {
+                "description": "Virtual Network Name"
             }
         },
-        "omsSku": {
-            "type": "string",
-            "defaultValue": "standalone",
-            "allowedValues": [
-                "free",
-                "standalone",
-                "pernode"
-            ],
-            "metadata": {
-                "description": "Select the SKU for your workspace."
-            }
-        },
-        "principalId": {
+        "subnetName": {
             "type": "string",
             "metadata": {
-                "description": "The objectId of service principal."
-            }
-        },
-        "vnetSubnetID": {
-            "type": "string",
-            "metadata": {
-                "description": "Resource ID of virtual network subnet used for nodes and/or pods IP assignment."
+                "description": "subnet name in virtual network"
             }
         },
         "serviceCidr": {
@@ -234,7 +205,7 @@
                         "storageProfile": "ManagedDisks",
                         "mode": "System",
                         "type": "VirtualMachineScaleSets",
-                        "vnetSubnetID": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Network/virtualNetworks/', parameters('vnetName') ,'/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
+                        "vnetSubnetID": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', parameters('vnetResourceGroupName') ,'/providers/Microsoft.Network/virtualNetworks/', parameters('vnetName') ,'/subnets/', parameters('subnetName'))]"
                     }
                 ],
                 "servicePrincipalProfile": {
@@ -258,7 +229,7 @@
                     "omsagent": {
                         "enabled": "[parameters('enableOmsAgent')]",
                         "config": {
-                            "logAnalyticsWorkspaceResourceID": "[parameters('omsWorkspaceId')]"
+                            "logAnalyticsWorkspaceResourceID": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', parameters('omsWorkspaceResourceGroupName') ,'/providers/microsoft.operationalinsights/workspaces/', parameters('omsWorkspaceName'))]"
                         }
                     }
                 }
@@ -269,8 +240,8 @@
             "type": "Microsoft.Resources/deployments",
             "name": "SolutionDeployment-20200417124757",
             "apiVersion": "2017-05-10",
-            "resourceGroup": "[split(parameters('omsWorkspaceId'),'/')[4]]",
-            "subscriptionId": "[split(parameters('omsWorkspaceId'),'/')[2]]",
+            "resourceGroup": "[parameters('omsWorkspaceResourceGroupName')]",
+            "subscriptionId": "[subscription().subscriptionId]",
             "properties": {
                 "mode": "Incremental",
                 "template": {
@@ -282,13 +253,13 @@
                         {
                             "apiVersion": "2015-11-01-preview",
                             "type": "Microsoft.OperationsManagement/solutions",
-                            "location": "[parameters('workspaceRegion')]",
-                            "name": "[concat('ContainerInsights', '(', split(parameters('omsWorkspaceId'),'/')[8], ')')]",
+                            "location": "[parameters('omsWorkspaceRegion')]",
+                            "name": "[concat('ContainerInsights', '(', parameters('omsWorkspaceName'), ')')]",
                             "properties": {
-                                "workspaceResourceId": "[parameters('omsWorkspaceId')]"
+                                "workspaceResourceId": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', parameters('omsWorkspaceResourceGroupName') ,'/providers/microsoft.operationalinsights/workspaces/', parameters('omsWorkspaceName'))]"
                             },
                             "plan": {
-                                "name": "[concat('ContainerInsights', '(', split(parameters('omsWorkspaceId'),'/')[8], ')')]",
+                                "name": "[concat('ContainerInsights', '(', parameters('omsWorkspaceName'), ')')]",
                                 "product": "[concat('OMSGallery/', 'ContainerInsights')]",
                                 "promotionCode": "",
                                 "publisher": "Microsoft"
