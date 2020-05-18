@@ -9,7 +9,7 @@
             "value": "pe-aks01-sqlmobile01"
         },
         "toResourceId": {
-            "value": "/subscriptions/00e7723f-84ad-456d-91c3-4a5a944f49de/resourceGroups/RG-PD-BSM-Mobile-AKS-DVSP-SB/providers/Microsoft.Sql/servers/formadmsb"
+            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Sql/servers/sqlmobile01"
         },
         "toSubResource": {
             "value": [
