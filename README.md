@@ -10,7 +10,7 @@ Follow below steps in order to create necessary mobile infrastructure
 # Group 2 (Kubernetes Cluster)
 1. [LogAnalytics Workspace](https://github.com/sudheeranguluri/AzureARM/tree/master/LogAnalyticsWorkspace)
 2. [ACR](https://github.com/sudheeranguluri/AzureARM/tree/master/ACR)
-3. [AKS](https://github.com/sudheeranguluri/AzureARM/tree/master/AKS_CNI)
+3. [AKS with Advanced Networking](https://github.com/sudheeranguluri/AzureARM/tree/master/AKS_CNI)
 
 # Group 3 (Gateway)
 

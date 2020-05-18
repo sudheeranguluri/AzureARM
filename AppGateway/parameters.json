@@ -17,8 +17,11 @@
         "capacity": {
             "value": 2
         },
-        "vnetId":{
-            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1"
+        "vnetResourceGroupName": {
+            "value": "ArmTemplatesTest"
+        },
+        "vnetName":{
+            "value": "vnet_pd_pd_mobile_ac1"
         },
         "subnetName": {
             "value": "snet_pd_pd_nprd_mobile_agic_ac1"
@@ -43,6 +46,9 @@
         },
         "autoScaleMaxCapacity": {
             "value": 10
+        },
+        "domainName": {
+            "value": "penndotmobile"
         },
 		"tags": {
             "value": {

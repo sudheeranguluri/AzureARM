@@ -12,7 +12,10 @@
             "type": "string"
         },
         "skuSize": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "Standard_Small", "Standard_Medium", "Standard_Large", "WAF_Medium", "WAF_Large", "Standard_v2", "WAF_v2"
+            ]
         },
         "capacity": {
             "type": "int",
@@ -28,7 +31,10 @@
             "type": "string"
         },
         "sku": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "Basic", "Standard"
+            ]
         },
         "allocationMethod": {
             "type": "string"
@@ -39,7 +45,13 @@
         "autoScaleMaxCapacity": {
             "type": "int"
         },
-        "vnetId":{
+        "vnetResourceGroupName": {
+            "type": "string",
+            "metadata": {
+                "desription": "Virtual Network Resource Group Name"
+            }
+        },
+        "vnetName":{
             "type": "string",
             "metadata": {
                 "desription": "Virtual Network Id"
@@ -56,7 +68,7 @@
         }
     },
     "variables": {
-        "vnetId": "[parameters('vnetId')]",
+        "vnetId": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', parameters('vnetResourceGroupName') ,'/providers/Microsoft.Network/virtualNetworks/', parameters('vnetName'))]",
         "publicIPRef": "[resourceId('Microsoft.Network/publicIPAddresses/', parameters('publicIpAddressName'))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]",
         "applicationGatewayId": "[resourceId('Microsoft.Network/applicationGateways', parameters('applicationGatewayName'))]"
