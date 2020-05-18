@@ -9,7 +9,15 @@
             "type": "string"
         },
         "sku": {
-            "type": "string"
+            "type": "string",
+            "allowedValues": [
+                "pergb2018",
+                "Free",
+                "Standalone",
+                "PerNode",
+                "Standard",
+                "Premium"
+            ]
         },
         "tags": {
             "type": "object"

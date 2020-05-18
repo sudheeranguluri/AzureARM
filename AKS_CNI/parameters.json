@@ -21,7 +21,7 @@
             "value": "Standard_B2s"
         },
         "servicePrincipalClientId": {
-            "value": "1b27aed3-c330-450a-b388-c5c490a13469"
+            "value": ""
         },
         "kubernetesVersion": {
             "value": "1.15.10"
