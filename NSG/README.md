@@ -9,6 +9,6 @@ This script will
   
   * Whitelist APIM virtual IP ingress
   
-* Assosicates to Gateway Subnet
+* Assosicates to Application Gateway Subnet
 
 [Main](https://github.com/sudheeranguluri/AzureARM)
