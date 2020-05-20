@@ -1,16 +1,5 @@
-$resource_group_name = 'ArmTemplatesTest'
-$resource_group_exists = az group  exists --resource-group $resource_group_name
-$deployment_name = $PSScriptRoot.Split([IO.Path]::DirectorySeparatorChar).GetValue($PSScriptRoot.Split([IO.Path]::DirectorySeparatorChar).Count-1)
+$cluster_name = 'AKS01'
+$aks_resource_group = 'ARMTemplatesTest'
+$acr_resource_id = '/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.ContainerRegistry/registries/acrmobileprd'
 
-
-#Check if resource group already exists if not create one
-if(-NOT ($resource_group_exists -eq 'true')){
-    az group create --name $resource_group_name -l eastus 
-}
-else{
-    Write-Output "resource group already exists"
-}
-
-Write-Output "Setting deployment name as '$deployment_name'"
-
-New-AzResourceGroupDeployment -Name $deployment_name -ResourceGroupName $resource_group_name -TemplateFile $PSScriptRoot\template.json -TemplateParameterFile $PSScriptRoot\parameters.json
+az aks update -n $cluster_name -g $resource_group $aks_resource_group --attach-acr $acr_resource_id
