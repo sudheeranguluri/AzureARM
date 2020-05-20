@@ -20,9 +20,6 @@
         "skuName": {
             "value": "GP_Gen5_2"
         },
-        "location": {
-            "value": "eastus"
-        },
         "maxSizeBytes": {
             "value": 34359738368
         },

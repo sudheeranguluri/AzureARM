@@ -8,9 +8,6 @@
         "nodeResourceGroupName":{
             "value": "AKS01-Nodes"
         },
-        "location": {
-            "value": "eastus"
-        },
         "dnsPrefix": {
             "value": "AKS01-dns"
         },

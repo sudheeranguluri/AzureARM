@@ -3,6 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
+            "defaultValue": "[resourceGroup().location]",
             "type": "string"
         },
         "applicationGatewayName": {
@@ -60,7 +61,7 @@
         "domainName": {
             "type": "string",
             "metadata": {
-                "description": "domain name of the public ip address. ****.eastus.cloudapp.azure.com"
+                "description": "domain name of the public ip address. ****.[location].cloudapp.azure.com"
             }
         },
 		"tags": {

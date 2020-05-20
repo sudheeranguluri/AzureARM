@@ -5,9 +5,6 @@
         "name": {
             "value": "kv-mobile-nprd"
         },
-        "location": {
-            "value": "eastus"
-        },
         "sku": {
             "value": "Standard"
         },

@@ -5,9 +5,6 @@
         "name": {
             "value": "apim-mobile"
         },
-        "location": {
-            "value": "eastus"
-        },
         "adminEmail": {
             "value": "XXXX@pa.gov"
         },
