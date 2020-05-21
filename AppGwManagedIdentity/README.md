@@ -4,4 +4,4 @@ This script will
 2. Assigns identity to Application Gateway 
 
 
-[Main](https://github.com/sudheeranguluri/AzureARM)
+[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6)

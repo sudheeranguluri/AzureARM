@@ -11,4 +11,4 @@ This script will
   
 * Assosicates to Application Gateway Subnet
 
-[Main](https://github.com/sudheeranguluri/AzureARM)
+[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6)

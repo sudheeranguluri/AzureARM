@@ -2,5 +2,5 @@
 
 -> Please make sure the name of the log workspace is unique for all DNS entries.
 
-[Main](https://github.com/sudheeranguluri/AzureARM)
+[&larr; Group 2](https://github.com/sudheeranguluri/AzureARM#group-2)
 
