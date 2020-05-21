@@ -6,5 +6,5 @@ This template needs to be deployed 3 times with different parameters files provi
 2. Private End Point for Storage Account
 2. Private End Point for KeyVault
 
-[&larr; Group 5](https://github.com/sudheeranguluri/AzureARM#group-5)
+[&larr; Group 5](https://github.com/sudheeranguluri/AzureARM#group-5-private-end-points---contributor)
 
