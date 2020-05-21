@@ -3,4 +3,4 @@
 Parameters needs attention
   1. Please make sure private id DNS entry is unique
 
-[&larr; Group 4](https://github.com/sudheeranguluri/AzureARM#group-4)
+[&larr; Group 4](https://github.com/sudheeranguluri/AzureARM#group-4-application---contributor)
