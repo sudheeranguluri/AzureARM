@@ -1,6 +1,16 @@
+#*********BEGIN ASSIGN VARIABLES***********#
+
+#Gateway Details
 $gateway_resource_group = 'ARMTemplatesTest'
 $identity_name = 'appgw-id'
 $gateway_name = 'agw-agic-aks'
+
+$subscription_name = 'PD-DEV'
+
+#*********END ASSIGN VARIABLES***********#
+
+#Set subscription
+az account set --subscription $subscription_name
 
 #Create Identity
 az identity create -g $gateway_resource_group -n $identity_name

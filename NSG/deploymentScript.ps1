@@ -1,16 +1,26 @@
+#*********BEGIN ASSIGN VARIABLES***********#
+
+#Network Details
 $networkResourceGroup = 'ARMTemplatesTest'
 $nsg_Name = 'nsg-agw-apim'
 $subnet_Name = 'snet_pd_pd_nprd_mobile_agic_ac1'
 $vnet_name = 'vnet_pd_pd_mobile_ac1'
 
+#Rule Names
 $Block_80_8080_443_Rule = "Block_80_8080_443"
 $Allow_Azure_Ports = 'Allow_Azure_Ports'
-
 $APIM_443 = 'APIM_443'
+
+#APIM Details
 $APIM_Name='apim-mobile'
 $APIM_Resource_Group='ARMTemplatesTest'
 
+$subscription_name = 'PD-DEV'
 
+#*********END ASSIGN VARIABLES***********#
+
+#Set subscription
+az account set --subscription $subscription_name
 
 #Create NSG
 az network nsg create -g $networkResourceGroup -n $nsg_Name --tags Agency="PDOT" Division="Mobile" Region="non-prd" Environment="PD" Application="Network Security Group"
