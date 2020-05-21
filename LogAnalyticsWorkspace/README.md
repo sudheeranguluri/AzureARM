@@ -2,5 +2,5 @@
 
 -> Please make sure the name of the log workspace is unique for all DNS entries.
 
-[&larr; Group 2](https://github.com/sudheeranguluri/AzureARM#group-2)
+[&larr; Group 2](https://github.com/sudheeranguluri/AzureARM#group-2-kubernetes-cluster---contributor)
 
