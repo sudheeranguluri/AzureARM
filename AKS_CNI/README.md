@@ -6,4 +6,4 @@ Parameters need attention
   3. Log Analytics Details (Resource Group, Name)
   4. Virtual Network (Resource Group, Name, Subnet Name)
 
-[&larr; Group 2](https://github.com/sudheeranguluri/AzureARM/blob/master/README.md/#group-2)
+[&larr; Group 2](https://github.com/sudheeranguluri/AzureARM#group-2-kubernetes-cluster---contributor)
