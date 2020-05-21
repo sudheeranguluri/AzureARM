@@ -6,4 +6,4 @@ This script will do the following
 4. Assign GET policy on KeyVault
 5. Assign "Managed Identity Operator" rights on Gateway Identity
 
-[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6)
+[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6-azure-cli-scripts---owner)
