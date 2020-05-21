@@ -11,4 +11,4 @@ This script will
   
 * Assosicates to Application Gateway Subnet
 
-[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6)
+[&larr; Group 6](https://github.com/sudheeranguluri/AzureARM#group-6-azure-cli-scripts---owner)
