@@ -6,4 +6,4 @@ Parameters need attention
 
 1. Access Policies (Client Id)
 
-[&larr; Group 4](https://github.com/sudheeranguluri/AzureARM#group-4)
+[&larr; Group 4](https://github.com/sudheeranguluri/AzureARM#group-4-application---contributor)
