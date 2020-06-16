@@ -45,7 +45,7 @@
             "value": "vnet_pd_pd_mobile_ac1"
         },
         "subnetName": {
-            "value": "snet_pd_pd_nprd_uat-mobile-aks_ac1"
+            "value": "snet_pd_pd_nprd_dev-mobile-aks_ac1"
         },
         "serviceCidr": {
             "value": "10.0.0.0/16"

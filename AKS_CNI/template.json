@@ -213,6 +213,17 @@
                     "ClientId": "[parameters('servicePrincipalClientId')]",
                     "Secret": "[parameters('servicePrincipalClientSecret')]"
                 },
+                "autoScalerProfile": {
+                    "balance-similar-node-groups": false,
+                    "max-graceful-termination-sec": "600",
+                    "scale-down-delay-after-add": "10m",
+                    "scale-down-delay-after-delete": "10s",
+                    "scale-down-delay-after-failure": "3m",
+                    "scale-down-unneeded-time": "10m",
+                    "scale-down-unready-time": "20m",
+                    "scale-down-utilization-threshold": "0.5",
+                    "scan-interval": "10s"
+                },
                 "networkProfile": {
                     "loadBalancerSku": "standard",
                     "networkPlugin": "[parameters('networkPlugin')]",
