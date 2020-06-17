@@ -2,77 +2,90 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "resourceName": {
-            "value": "AKS01"
-        },
-        "nodeResourceGroupName":{
-            "value": "AKS01-Nodes"
-        },
-        "dnsPrefix": {
-            "value": "AKS01-dns"
-        },
-        "agentCount": {
-            "value": 2
-        },
-        "agentVMSize": {
-            "value": "Standard_B2s"
-        },
-        "servicePrincipalClientId": {
-            "value": ""
-        },
-        "kubernetesVersion": {
-            "value": "1.15.10"
-        },
-        "networkPlugin": {
-            "value": "azure"
-        },
-        "enableRBAC": {
-            "value": true
-        },
-        "enablePrivateCluster": {
-            "value": false
-        },
-        "enableHttpApplicationRouting": {
-            "value": false
-        },
-        "vmssNodePool": {
-            "value": true
-        },
-        "vnetResourceGroupName": {
-            "value": "ARMTemplatesTest" 
-        },
-        "vnetName": {
-            "value": "vnet_pd_pd_mobile_ac1"
-        },
-        "subnetName": {
-            "value": "snet_pd_pd_nprd_dev-mobile-aks_ac1"
-        },
-        "serviceCidr": {
-            "value": "10.0.0.0/16"
-        },
-        "dnsServiceIP": {
-            "value": "10.0.0.10"
-        },
-        "dockerBridgeCidr": {
-            "value": "172.17.0.1/16"
-        },
-        "omsWorkspaceName": {
-            "value": "mobilenprdworkspace01-af93449c-9cef-4f42-b861-56e62123f083-EUS"
-        },
-        "omsWorkspaceResourceGroupName":{
-            "value": "ArmTemplatesTest"
-        },
-        "omsWorkspaceRegion": {
-            "value": "eastus"
-        },
-		"tags": {
-            "value": {
-                "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Kubernetes Cluster"
-            }
+      "resourceName": {
+        "value": "pd-devmobileclstr01"
+      },
+      "location": {
+        "value": "[resourceGroup().location]"
+      },
+      "dnsPrefix": {
+        "value": "pd-devmobileclstr01-dns"
+      },
+      "osDiskSizeGB": {
+        "value": 0
+      },
+      "agentCount": {
+        "value": 1
+      },
+      "agentMinCount": {
+        "value": 1
+      },
+      "agentMaxCount": {
+        "value": 4
+      },
+      "agentVMSize": {
+        "value": "Standard_D2"
+      },
+      "osType": {
+        "value": "Linux"
+      },
+      "kubernetesVersion": {
+        "value": "1.16.9"
+      },
+      "networkPlugin": {
+        "value": "azure"
+      },
+      "enableRBAC": {
+        "value": true
+      },
+      "enableAutoScale": {
+        "value": true
+      },
+      "enablePrivateCluster": {
+        "value": false
+      },
+      "enableHttpApplicationRouting": {
+        "value": false
+      },
+      "enableOmsAgent": {
+        "value": true
+      },
+      "omsWorkspaceResourceGroupName": {
+        "value": "rg_nprd_mobile_mgmnt"
+      },
+      "omsWorkspaceRegion": {
+        "value": "eastus"
+      },
+      "omsWorkspaceName": {
+        "value": "la-nprd-mobile"
+      },
+      "vnetResourceGroupName": {
+        "value": "rg_network"
+      },
+      "vnetName": {
+        "value": "vnet_pd_pd_mobile_ac1"
+      },
+      "subnetName": {
+        "value": "snet_pd_pd_nprd_dev-mobile-aks_ac1"
+      },
+      "serviceCidr": {
+        "value": "10.44.44.0/23"
+      },
+      "dnsServiceIP": {
+        "value": "10.44.44.100"
+      },
+      "dockerBridgeCidr": {
+        "value": "10.62.16.0/20"
+      },
+      "nodeResourceGroupName": {
+        "value": "rg_nprd_dev_mobile_nodes"
+      },
+      "tags": {
+        "value": {
+          "Agency": "PDOT",
+          "PD-Environment": "nprd",
+          "Application2": "Mobile"
         }
+      }
     }
-}
+  }
