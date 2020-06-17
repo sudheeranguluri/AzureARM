@@ -1,15 +1,15 @@
 #*********BEGIN ASSIGN VARIABLES***********#
 
 #AKS Details
-$cluster_name = 'AKS01'
-$aks_resource_group = 'ARMTemplatesTest'
+$cluster_name = 'pd-devmobileclstr01'
+$aks_resource_group = 'rg_nprd_dev_mobile'
 
 #ACR Details
-$acr_resource_group = 'ARMTemplatesTest'
-$acr_name = 'acrmobileprd'
+$acr_resource_group = 'rg_nprd_dev_mobile'
+$acr_name = 'acrdevmobileac1'
 
 #subscription name
-$subscription_name = 'PD-DEV'
+$subscription_name = 'PD_com_PD'
 
 #*********END ASSIGN VARIABLES***********#
 
