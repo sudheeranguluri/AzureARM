@@ -19,6 +19,7 @@
             "allowedValues": [
                 "Shared", "Free", "Basic", "Basic", "Basic", "Standard", "Standard", "Standard", "Premium", "Premium", "Premium", "PremiumV2", "PremiumV2", "PremiumV2", "Isolated", "Isolated", "Isolated", "Dynamic"
             ]
+        }
         "skuCode": {
             "type": "string",
             "allowedValues": [
@@ -49,6 +50,9 @@
         },
         "dockerRegistryStartupCommand": {
             "type": "string"
+        },
+		"tags": {
+            "type": "object"
         }
     },
     "resources": [
@@ -57,7 +61,7 @@
             "name": "[parameters('name')]",
             "type": "Microsoft.Web/sites",
             "location": "[parameters('location')]",
-            "tags": {},
+            "tags": "[parameters('tags')]",
             "dependsOn": [
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
             ],
@@ -96,7 +100,7 @@
             "type": "Microsoft.Web/serverfarms",
             "location": "[parameters('location')]",
             "kind": "linux",
-            "tags": {},
+            "tags": "[parameters('tags')]",
             "dependsOn": [],
             "properties": {
                 "name": "[parameters('hostingPlanName')]",

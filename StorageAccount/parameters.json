@@ -23,10 +23,8 @@
         "tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Storage Account"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }

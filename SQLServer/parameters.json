@@ -53,19 +53,15 @@
         "databaseTags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "SQL Database"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         },
         "serverTags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "SQL Server"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         },
         "enableVA": {

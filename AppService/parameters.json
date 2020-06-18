@@ -43,6 +43,13 @@
         },
         "dockerRegistryStartupCommand": {
             "value": ""
+        },
+        "tags": {
+            "value": {
+                "Agency": "PDOT",
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
+            }
         }
     }
 }
