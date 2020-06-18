@@ -19,7 +19,6 @@
             "allowedValues": [
                 "Shared", "Free", "Basic", "Basic", "Basic", "Standard", "Standard", "Standard", "Premium", "Premium", "Premium", "PremiumV2", "PremiumV2", "PremiumV2", "Isolated", "Isolated", "Isolated", "Dynamic"
             ]
-        },
         "skuCode": {
             "type": "string",
             "allowedValues": [

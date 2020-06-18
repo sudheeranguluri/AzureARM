@@ -3,22 +3,22 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "azapp01"
+            "value": "app-mobiledev01"
         },
         "location": {
             "value": "East US"
         },
         "hostingPlanName": {
-            "value": "asp-mobile-dev"
+            "value": "plan-mobiledev01"
         },
         "alwaysOn": {
             "value": false
         },
         "sku": {
-            "value": "Basic"
+            "value": "Standard"
         },
         "skuCode": {
-            "value": "B1"
+            "value": "S1"
         },
         "workerSize": {
             "value": "0"

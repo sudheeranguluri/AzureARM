@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
-            "value": "apim-mobile"
+            "value": "apimmobiledevac1"
         },
         "adminEmail": {
-            "value": "XXXX@pa.gov"
+            "value": "c-ngoli@pa.gov"
         },
         "orgName": {
             "value": "PDOT"
@@ -20,10 +20,8 @@
 		"tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "API Management"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }

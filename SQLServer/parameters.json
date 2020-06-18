@@ -12,7 +12,7 @@
             "value": "SQL_Latin1_General_CP1_CI_AS"
         },
         "databaseName": {
-            "value": "dbforms"
+            "value": "sqldb-formsdb"
         },
         "tier": {
             "value": "GeneralPurpose"
@@ -27,7 +27,7 @@
             "value": ""
         },
         "serverName": {
-            "value": "sqlmobile01"
+            "value": "sql-mobiledev01"
         },
         "licenseType": {
             "value": "LicenseIncluded"
