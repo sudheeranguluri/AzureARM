@@ -11,7 +11,7 @@
         "accessPolicies": {
             "value": [
                 {
-                    "objectId": "edb6b090-1e7c-4c81-ac88-ea5ba1558f9f",
+                    "objectId": "4477c415-cdf9-4bfa-ab14-4455d87be67b",
                     "tenantId": "418e2841-0128-4dd5-9b6c-47fc5a9a1bde",
                     "permissions": {
                         "keys": [
@@ -88,10 +88,8 @@
         "tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Key Vault"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }

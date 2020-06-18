@@ -21,7 +21,7 @@
             "value": "S1"
         },
         "maxSizeBytes": {
-            "value": 34359738368
+            "value": 268435456000
         },
         "sampleName": {
             "value": ""
