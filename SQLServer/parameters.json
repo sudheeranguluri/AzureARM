@@ -15,10 +15,10 @@
             "value": "sqldb-formsdb"
         },
         "tier": {
-            "value": "GeneralPurpose"
+            "value": "Standard"
         },
         "skuName": {
-            "value": "GP_Gen5_2"
+            "value": "S1"
         },
         "maxSizeBytes": {
             "value": 34359738368
