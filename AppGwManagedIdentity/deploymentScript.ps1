@@ -1,11 +1,11 @@
 #*********BEGIN ASSIGN VARIABLES***********#
 
 #Gateway Details
-$gateway_resource_group = 'ARMTemplatesTest'
-$identity_name = 'appgw-id'
-$gateway_name = 'agw-agic-aks'
+$gateway_resource_group = 'rg_nprd_mobile'
+$identity_name = 'id-agicmobile01'
+$gateway_name = 'ag-mobileac1'
 
-$subscription_name = 'PD-DEV'
+$subscription_name = 'PD_com_PD'
 
 #*********END ASSIGN VARIABLES***********#
 

@@ -1,20 +1,20 @@
 #*********BEGIN ASSIGN VARIABLES***********#
 
 #AKS POD Identity
-$nodes_resource_group = 'AKS01-nodes'
-$pod_identity_name = 'podIdentity'
+$nodes_resource_group = 'rg_nprd_dev_mobile_nodes'
+$pod_identity_name = 'id-podmobiledev01'
 
 #KeyVault
-$keyvault_name = 'kv-mobile-nprd'
-$keyvault_resource_group = 'ARMTemplatesTest'
+$keyvault_name = 'kv-devmobile'
+$keyvault_resource_group = 'rg_nprd_dev_mobile'
 
 #Gateway
-$gw_identity_name = 'appgw_id'
-$gw_resource_group_name = 'ARMTemplatesTest'
-$gw_name = 'agw-agic-aks'
+$gw_identity_name = 'id-agicmobile01'
+$gw_resource_group_name = 'rg_nprd_mobile'
+$gw_name = 'ag-mobileac1'
 
 #subscription name
-$subscription_name = 'PD-DEV'
+$subscription_name = 'PD_com_PD'
 
 #*********END ASSIGN VARIABLES***********#
 

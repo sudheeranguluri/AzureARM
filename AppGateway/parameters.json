@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "applicationGatewayName": {
-            "value": "agw-agic-aks"
+            "value": "ag-mobileac1"
         },
         "tier": {
             "value": "Standard_v2"
@@ -24,7 +24,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "pip-agw-agic-aks"
+            "value": "pip-agicmobiledevac1"
         },
         "sku": {
             "value": "Standard"
@@ -39,21 +39,19 @@
             "value": 10
         },
         "vNetResourceGroupName": {
-            "value": "ArmTemplatesTest"
+            "value": "rg_network"
         },
         "vNetName":{
             "value": "vnet_pd_pd_mobile_ac1"
         },
         "domainName": {
-            "value": "penndotmobile"
+            "value": "penndotmobiledev"
         },
 		"tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Application Gateway"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }
