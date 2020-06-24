@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
        "privateEndpointName": {
-            "value": "pe-aks01-keyvault01"
+            "value": "pe-aksmobiledev01-keyvaultmobiledev01"
         },
         "toResourceId": {
-            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.KeyVault/vaults/kv-mobile-nprd"
+            "value": "/subscriptions/d0c8340f-1bf1-4c75-8133-56df34bb938e/resourceGroups/rg_nprd_dev_mobile/providers/Microsoft.KeyVault/vaults/kv-devmobile"
         },
         "toSubResource": {
             "value": [
@@ -14,15 +14,13 @@
             ]
         },
         "fromSubnetId": {
-            "value": "/subscriptions/d7713b76-bdce-4b8a-bda2-987e866c6bb7/resourceGroups/ARMTemplatesTest/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_uat-mobile-aks_ac1"
+            "value": "/subscriptions/d0c8340f-1bf1-4c75-8133-56df34bb938e/resourceGroups/rg_network/providers/Microsoft.Network/virtualNetworks/vnet_pd_pd_mobile_ac1/subnets/snet_pd_pd_nprd_dev-mobile-aks_ac1"
         },
         "tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Private End Point"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }

@@ -11,10 +11,8 @@
         "tags": {
             "value": {
                 "Agency": "PDOT",
-                "Division": "Mobile",
-                "Region": "non-prd",
-                "Environment": "PD",
-                "Application": "Log Analytics Workspace"
+                "PD-Environment": "nprd",
+                "Application2": "Mobile"
             }
         }
     }
